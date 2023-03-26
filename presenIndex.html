@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="presen.css">
+  <script type="text/javascript" src="presenScript.js"></script>
+</head>
+
+<body>
+  <div class="general">
+    <p>
+      超個人用単語帳  まいたん
+    </p>
+  </div>
+
+  <div class="general">
+    <p>英文を下段のフォームにコピペしてください</p>
+    <textarea id = mytextarea placeholder="①ここに英文をペーストしてください" cols="45" rows="30"></textarea><br>
+   
+    <button class = buttondesign onclick="processText()">②英文を貼り付けたらこのボタンを押す</button>
+
+
+  <div class="general">
+    <p>単語リスト （分からない単語をチェックしてください） </p>
+    <ul id="wordList"></ul>
+  </div>
+
+
+  <div class="general">
+    <button class = buttondesign onclick="addToMyTan();clearWordList()">③登録する単語をチェックしたらこのボタンを押す</button>
+    <p>myTan追加リスト （チェックした単語を単語帳に格納しました）</p>
+    <ul id="wordListForMyTan"></ul>
+  </div>
+
+  <div class="general">
+    <button class = buttondesign onclick="showWordList()">じぶんの単語帳を見る</button>
+  <ul id="LatestMyTanList"></ul>
+  </div>
+
+</body>
+
+</html>
